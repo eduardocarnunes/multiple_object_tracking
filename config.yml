@@ -1,0 +1,47 @@
+# True: Camera Real Time 
+# False: Video File
+is_mode_camera : True 
+id_camera : 0
+
+# True: to salve result in .avi 
+# False: don't to save in .avi
+is_save_result_video : True 
+
+# FPS video result file
+fps_save_result : 15
+
+# resolution of camera 
+# make_1080p: 1920x1080
+# make_720p: 1280x720
+# make_480p: 640x480
+# make_custom: width x height (set in )
+set_resolution : make_custom
+# uses when make_custom
+resolution_custom_width : 640
+resolution_custom_height : 480
+
+# Input Size Yolo. Must be multiple of 32
+input_size_yolo : 640
+
+# If is_mode_camera == False, put video path .mp4
+video_path_test : ./data/video/test2.mp4
+
+# If is_save_result_video == True, put video path .avi
+video_path_result : ./data/result/result_test2.avi
+
+# True: show preview result 
+is_preview_result : True
+# True: info (id, coords, class name) show 
+is_show_result_cmd : False
+# True: show result topside on preview
+is_show_count_object : True
+
+# True: Save all result in a .csv file
+is_save_result_csv : False
+# If save_info_result == True, path file where .csv will save
+path_file_csv : ./data/result.csv
+
+# allowe classes Yolov4 for detection
+allowed_classes : 
+  - person
+  - car
